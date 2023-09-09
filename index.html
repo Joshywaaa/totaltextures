@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="scripts/animate.js"></script>
+
+
+
+
+    <title>Total Textures</title>
+</head>
+<body>
+
+    <div class="banner">
+        <img src="https://dummyimage.com/1200x400/000/fff.jpg" alt="Image 1">
+
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <script src="scripts/stickyNav.js"></script>
+
+    </header>
+
+    <main>
+        <div class="article-row">
+            <div class="text-content">
+                <h2>Article Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+            <div class="image-carousel">
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 2">
+                    </div>
+                    <!-- Add more carousel cells with images as needed -->
+                </div>
+            </div>
+        </div>
+
+        <div class="article-row">
+            <div class="text-content">
+                <h2>Article Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+            <div class="image-carousel">
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 2">
+                    </div>
+                    <!-- Add more carousel cells with images as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Add more article rows as needed -->
+    </main>
+
+    <script>
+        // Initialize Flickity when the document is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            var carousels = document.querySelectorAll('.carousel');
+            carousels.forEach(function (carousel) {
+                new Flickity(carousel, {
+                    // Flickity options and settings here
+                    cellAlign: 'left',
+                    contain: true, // Adjust to your layout needs
+                    autoPlay: 3000, // Auto-play the carousel (adjust the time as needed)
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
