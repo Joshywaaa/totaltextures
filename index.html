@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
+
     <script src="scripts/animate.js"></script>
 
 
@@ -16,7 +19,7 @@
 <body>
 
     <div class="banner">
-        <img src="https://dummyimage.com/1200x400/000/fff.jpg" alt="Image 1">
+        <h3>Total Textures LTD</h3>
 
     </div>
 
@@ -29,47 +32,25 @@
             <!-- Add more navigation links as needed -->
         </ul>
     </nav>
-    <script src="scripts/stickyNav.js"></script>
+    <script src="scripts/stickyNav.js" fullscreen: true></script>
 
     </header>
 
     <main>
-        <div class="article-row">
-            <div class="text-content">
-                <h2>Article Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            </div>
-            <div class="image-carousel">
-                <div class="carousel">
-                    <div class="carousel-cell">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 1">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 2">
-                    </div>
-                    <!-- Add more carousel cells with images as needed -->
+        <div class="image-carousel">
+            <div class="carousel">
+                <div class="carousel-cell">
+                    <img src="images/furnatureRoom.jpg" alt="furnatureRoom">
                 </div>
-            </div>
-        </div>
-
-        <div class="article-row">
-            <div class="text-content">
-                <h2>Article Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            </div>
-            <div class="image-carousel">
-                <div class="carousel">
-                    <div class="carousel-cell">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 1">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" alt="Image 2">
-                    </div>
-                    <!-- Add more carousel cells with images as needed -->
+                <div class="carousel-cell">
+                    <img src="images/houseDrive.jpg" alt="houseDrive">
                 </div>
-            </div>
-        </div>
-        <!-- Add more article rows as needed -->
+                <div class="carousel-cell">
+                    <img src="images/housePool.jpg" alt="housePool">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/insideChair.jpg" alt="insideChair">
+                </div>
     </main>
 
     <script>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
     <script src="scripts/animate.js"></script>
+    <script src="scripts/fullscreen.js"></script>
+
 
 
 
@@ -16,7 +18,7 @@
 <body>
 
     <div class="banner">
-        <img src="https://dummyimage.com/1200x400/000/fff.jpg" alt="Image 1">
+        <h3>Total Textures LTD</h3>
 
     </div>
 
@@ -34,8 +36,38 @@
     </header>
 
     <main>
-        <p>Gallery</p>
+        <div class="image-grid">
+            
+            <img src="images/furnatureRoom.jpg" alt="furnroom" onclick="openFullscreen(this)">
+            <img src="images/houseDrive.jpg" alt="houseDrive" onclick="openFullscreen(this)">
+            <img src="images/housePool.jpg" alt="housePool" onclick="openFullscreen(this)">
+            <img src="images/insideChair.jpg" alt="insideChair" onclick="openFullscreen(this)">
+            <img src="images/kitchen.jpg" alt="kitchen" onclick="openFullscreen(this)">
+            <img src="images/manbrick.jpg" alt="brick" onclick="openFullscreen(this)">
+            <img src="images/manpaint.jpg" alt="paint" onclick="openFullscreen(this)">
+        </div>
+    
+        <!-- Fullscreen image container -->
+        <div id="fullscreen-container">
+            <img id="fullscreen-image" class="fullscreen-img" onclick="closeFullscreen()" alt="Fullscreen Image">
+        </div>
 
+
+
+        </div>
     </main>
 </body>
+<script>
+    let fullscreenImage = document.getElementById("fullscreen-image");
+    let fullscreenContainer = document.getElementById("fullscreen-container");
+
+    function openFullscreen(image) {
+        fullscreenImage.src = image.src;
+        fullscreenContainer.style.display = "block";
+    }
+
+    function closeFullscreen() {
+        fullscreenContainer.style.display = "none";
+    }
+</script>
 </html>
