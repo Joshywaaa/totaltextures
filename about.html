@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-    <script src="scripts/animate.js"></script>
-
-
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <title>Total Textures</title>
 </head>
 <body>
-
-    <div class="banner">
-        <h3>Total Textures LTD</h3>
-
-    </div>
-
-
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Total Textures LTD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <script src="scripts/stickyNav.js"></script>
-
-    </header>
 
     <main>
         <div class="article-row">
@@ -39,20 +42,40 @@
                 <h2>My Business</h2>
                 <p>Total Textures LTD stands as a testament to the expertise and dedication of Dennis, the driving force behind this specialized exterior plastering business. With a keen eye for detail and an unwavering commitment to perfection, Dennis and his team have established themselves as the go-to experts in exterior plastering. They excel in revitalizing the exteriors of various structures, from historic landmarks to contemporary homes, delivering both durability and aesthetic appeal. The business's success lies not only in their exceptional craftsmanship but also in their unwavering commitment to client satisfaction, making Total Textures LTD a trusted name in the industry.</p>
             </div>
-            <div class="image-carousel">
-                <div class="carousel">
-                    <div class="carousel-cell">
-                        <img src="images/manbelt.jpg" alt="belt">
+            <div class="container">
+                <div id="businessCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#businessCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#businessCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#businessCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+            
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/manbelt.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/manbowl.jpg" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/manbrick.jpg" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/manpaint.jpg" alt="Image 3">
+                        </div>
                     </div>
-                    <div class="carousel-cell">
-                        <img src="images/manbowl.jpg" alt="bowl">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="images/manbrick.jpg" alt="brick">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="images/manpaint.jpg" alt="paint">
-                    </div>
+            
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#businessCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#businessCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,26 +85,43 @@
                 <h2>My Family</h2>
                 <p>Beyond the world of plastering, Dennis's life finds its true richness in his cherished family. Alongside his thriving business, Dennis shares his journey with his loving wife and two children. His wife plays an integral role in managing the business operations, ensuring that everything runs seamlessly. Their two children, inquisitive and full of youthful enthusiasm, often accompany their father to job sites, witnessing firsthand the artistry that defines Total Textures LTD. This family unit doesn't just support the business; they embody its values of unity and dedication. Together, they create a harmonious blend of professional excellence and familial love that underpins every facet of their lives.</p>
             </div>
-            <div class="image-carousel">
-                <div class="carousel">
-                    <div class="carousel-cell">
-                        <img src="images/beachfam.jpg" alt="beach">
+            <div class="container">
+                <div id="familyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#familyCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#familyCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#familyCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+            
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/famBig.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/blackFam.jpg" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/outsideFam.jpg" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/beachfam.jpg" alt="Image 3">
+                        </div>
                     </div>
-                    <div class="carousel-cell">
-                        <img src="images/blackFam.jpg" alt="black">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="images/famBig.jpg" alt="big">
-                    </div>
-                    <div class="carousel-cell">
-                        <img src="images/outsideFam.jpg" alt="outside">
-                    </div>
-
-                    <!-- Add more carousel cells with images as needed -->
+            
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#familyCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#familyCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Add more article rows as needed -->
     </main>
 </body>
 </html>
