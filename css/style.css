@@ -8,6 +8,7 @@
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #bfd7ea;
 }
 .banner{
     background-color: #839788;
@@ -23,10 +24,6 @@ h3{
     padding: 1%;
 }
 
-.sidebar-button {
-    font-size: 24px;
-    cursor: pointer;
-}
 
 main {
     padding: 20px;
@@ -42,44 +39,63 @@ main {
     flex: 1;
 }
 
+/* Add styling for the image carousel here */
 .image-carousel {
     flex: 1;
-    /* Add styling for the image carousel here */
+    width: 100%;
+    overflow: hidden; /* Ensure the images are contained within the carousel */
 }
 
-/* Add this to your CSS file */
 .carousel {
     display: block;
     width: 100%;
+    overflow: hidden; /* Hide overflow to prevent image spillage */
 }
 
 .carousel-cell {
-    width: 100%; /* Adjust to your layout needs */
-    margin-right: 10px; /* Adjust spacing between carousel items */
+    width: 100%;
+    margin-right: 10px;
+    display: inline-block; /* Ensure each cell appears next to each other */
 }
 
-/* Optional: Customize carousel navigation buttons */
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering the entire cell */
+}
+
+* big buttons, no circle */
 .flickity-prev-next-button {
-    background: #333;
-    color: white;
-    border-radius: 50%;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;   
-    line-height: 40px;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
 }
 
-.flickity-prev-next-button:hover {
-    background: #555;
-}
 .carousel.is-fullscreen .carousel-cell {
     height: 100%;
   }
+
 #navbar {
     width: 100%;
+    padding: 2%;
     height: 5%;
     background-color: #839788;
     z-index: 1000;
+    position: absolute;
 }
 
 #navbar ul {
@@ -90,34 +106,47 @@ main {
 #navbar li {
     display: inline;
     margin: 10px;   
+    padding: 5px;
 }
 
 #navbar a {
     text-decoration: none;
     color: white;
 }
-
-
-/* Initial hidden state */
-.article-row {
-    opacity: 0;
-    transform: translateY(20px); /* Optional: Add a vertical slide-in effect */
-    transition: opacity 0.5s ease, transform 0.5s ease;
+#navbar li:hover {
+    background-color: #EEE0CB; /* Change to the desired color when hovering */
+    border-radius: 5px; /* Add rounded corners for a nice effect */
+    padding: 5px;
 }
 
+#navbar li:hover a {
+    color: white; /* Change the text color on hover */
+}
+
+
+/* Initial hidden state 
+.article-row {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a vertical slide-in effect 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+*/
 h2 {
     color: #333;
 }
 
 .container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 5%;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.text-content{
+    float: center;
 
+}
 label {
     display: block;
     text-align: left;
@@ -152,27 +181,26 @@ input[type="submit"]:hover {
     background-color: #555;
 }
 
-.image-grid {
+/* Style for the gallery container */
+.gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between images */
 }
 
-/* Style the grid items (images) */
-.image-grid img {
+/* Style for each gallery item */
+.gallery-item {
+    overflow: hidden;
+}
+
+/* Style for images within gallery items */
+.gallery-item img {
     width: 100%;
     height: auto;
-    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
 }
 
-/* Hide the image in fullscreen mode */
-.fullscreen-img {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background-color: #000;
+/* Hover effect on images */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Increase the image size on hover */
 }

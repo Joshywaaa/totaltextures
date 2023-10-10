@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var options = {
         root: null, // Use the viewport as the root
         rootMargin: '0px', // No margin
-        threshold: 0.4, // Trigger when 20% of the element is visible
+        threshold: 0.8, // Trigger when 20% of the element is visible
     };
 
     var articleRows = document.querySelectorAll('.article-row');
