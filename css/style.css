@@ -37,6 +37,7 @@ main {
 
 .text-content {
     flex: 1;
+    margin: 5px;
 }
 
 /* Add styling for the image carousel here */
@@ -114,7 +115,7 @@ main {
     color: white;
 }
 #navbar li:hover {
-    background-color: #EEE0CB; /* Change to the desired color when hovering */
+    background-color: #9eaea2; /* Change to the desired color when hovering */
     border-radius: 5px; /* Add rounded corners for a nice effect */
     padding: 5px;
 }
@@ -186,6 +187,7 @@ input[type="submit"]:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 10px; /* Adjust the gap between images */
+    margin-top: 50px;
 }
 
 /* Style for each gallery item */
@@ -196,7 +198,7 @@ input[type="submit"]:hover {
 /* Style for images within gallery items */
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 300px;
     transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
 }
 
