@@ -40,14 +40,13 @@
             <div class="text-content">
                 <h2>Contact</h2>
                 <div class="container">
-                    <h2>Contact Us</h2>
                     <p>
-                        <strong>Phone:</strong>
+                        <strong>Dennis Mobile:</strong>
                         <a href="tel:+1234567890" id="phoneLink">+1 (234) 567-890</a>
                         <button class="btn btn-primary btn-sm" onclick="copyToClipboard('phoneLink')">Copy</button>
                     </p>
                     <p>
-                        <strong>Email:</strong>
+                        <strong>Dennis Email:</strong>
                         <a href="mailto:contact@example.com" id="emailLink">contact@example.com</a>
                         <button class="btn btn-primary btn-sm" onclick="copyToClipboard('emailLink')">Copy</button>
                     </p>
@@ -78,3 +77,19 @@
     </main>
 </body>
 </html>
+<script>
+    function copyToClipboard(elementId) {
+        var link = document.getElementById(elementId);
+        var text = link.textContent;
+    
+        var textArea = document.createElement('textarea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+    
+        alert('Copied to clipboard: ' + text);
+    }
+    </script>
+    

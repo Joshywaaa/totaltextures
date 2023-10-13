@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-    .image-grid {
+.image-grid {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -58,5 +58,13 @@ body {
     }
 
 .text-content{
-    margin: 3%;
+    background-color: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
