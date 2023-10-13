@@ -9,13 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <title>Total Textures</title>
-
-
-
-    <title>Total Textures</title>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Total Textures LTD</a>
@@ -41,40 +36,45 @@
         </div>
     </nav>
     <main>
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Contact Form</title>
-
-        </head>
-        <body>
-            <div class="article-row">
-                <div class="text-content">
-                    <h2>Contact</h2>
-                    <p></p>
-                </div>
-                <h2>Contact Us</h2>
+        <div class="article-row">
+            <div class="text-content">
+                <h2>Contact</h2>
                 <div class="container">
-                    <form action="#" method="post">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" name="first_name" required>
-            
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name" name="last_name" required>
-            
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-            
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-            
-                        <input type="submit" value="Submit">
-                    </form>
+                    <h2>Contact Us</h2>
+                    <p>
+                        <strong>Phone:</strong>
+                        <a href="tel:+1234567890" id="phoneLink">+1 (234) 567-890</a>
+                        <button class="btn btn-primary btn-sm" onclick="copyToClipboard('phoneLink')">Copy</button>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:contact@example.com" id="emailLink">contact@example.com</a>
+                        <button class="btn btn-primary btn-sm" onclick="copyToClipboard('emailLink')">Copy</button>
+                    </p>
                 </div>
             </div>
-        </body>
-        </html>
-        
+            <div class="container">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 </html>

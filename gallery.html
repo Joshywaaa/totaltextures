@@ -9,12 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <title>Total Textures</title>
-
-
-
-
-
-    <title>Total Textures</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,37 +38,52 @@
 
     <main>
         <div class="image-grid">
-            
-            <img src="images/furnatureRoom.jpg" alt="furnroom" onclick="openFullscreen(this)">
-            <img src="images/houseDrive.jpg" alt="houseDrive" onclick="openFullscreen(this)">
-            <img src="images/housePool.jpg" alt="housePool" onclick="openFullscreen(this)">
-            <img src="images/insideChair.jpg" alt="insideChair" onclick="openFullscreen(this)">
-            <img src="images/kitchen.jpg" alt="kitchen" onclick="openFullscreen(this)">
-            <img src="images/manbrick.jpg" alt="brick" onclick="openFullscreen(this)">
-            <img src="images/manpaint.jpg" alt="paint" onclick="openFullscreen(this)">
+            <div class="image-container">
+                <img src="images/houseDrive.jpg" alt="houseDrive" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+           
+            <div class="image-container">
+                <img src="images/insideChair.jpg" alt="insideChair" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/kitchen.jpg" alt="kitchen" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/manbrick.jpg" alt="brick" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/furnatureRoom.jpg" alt="furnroom" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/housePool.jpg" alt="housePool" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
+            <div class="image-container">
+                <img src="images/manpaint.jpg" alt="paint" onclick="openFullscreen(this)" onmouseover="zoomImage(this)" onmouseout="unzoomImage(this)">
+            </div>
         </div>
     
         <!-- Fullscreen image container -->
         <div id="fullscreen-container">
             <img id="fullscreen-image" class="fullscreen-img" onclick="closeFullscreen()" alt="Fullscreen Image">
         </div>
-
-
-
-        </div>
     </main>
+    <script>
+        function openFullscreen(img) {
+            document.getElementById("fullscreen-image").src = img.src;
+            document.getElementById("fullscreen-container").style.display = "block";
+        }
+
+        function closeFullscreen() {
+            document.getElementById("fullscreen-container").style.display = "none";
+        }
+
+        function zoomImage(img) {
+            img.style.transform = "scale(1.1)";
+        }
+
+        function unzoomImage(img) {
+            img.style.transform = "scale(1)";
+        }
+    </script>
 </body>
-<script>
-    let fullscreenImage = document.getElementById("fullscreen-image");
-    let fullscreenContainer = document.getElementById("fullscreen-container");
-
-    function openFullscreen(image) {
-        fullscreenImage.src = image.src;
-        fullscreenContainer.style.display = "block";
-    }
-
-    function closeFullscreen() {
-        fullscreenContainer.style.display = "none";
-    }
-</script>
 </html>
