@@ -9,7 +9,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-
 /* Styling for the image grid */
 .image-grid {
     display: flex;
@@ -24,12 +23,13 @@ body {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    height: 300px;
 }
 
 /* Styling for images within image containers */
 .image-container img {
     width: 100%; /* Make images fill the container width */
-    height: auto; /* Maintain the aspect ratio */
+    height: 100%; /* Maintain the aspect ratio based on the container's fixed height */
     transition: transform 0.3s ease-in-out; /* Smooth image transform on hover */
 }
 
