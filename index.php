@@ -22,33 +22,8 @@
 
 <body>
     <!-- Navigation bar with Bootstrap styling -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Brand/logo link -->
-            <a class="navbar-brand" href="index.html">Total Textures LTD</a>
-            <!-- Navbar toggle button for small screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Navigation links -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include "includes/nav.php"?>
+
 
     <main>
         <div class="container">
@@ -59,14 +34,12 @@
                 <!-- Carousel slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/furnatureRoom.jpg" alt="Image 1" style="width: 100%; height:100vh;">
+                        <img src="images/oswald.jpg" alt="oswald" style="width: 100%; ">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/houseDrive.jpg" alt="Image 2" style="width: 100%; height: 100vh;">
+                        <img src="images/rollo.jpg" alt="rollo" style="width: 100%; ">
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/housePool.jpg" alt="Image 3" style="width: 100%; height: 100vh;">
-                    </div>
+
                 </div>
         
                 <!-- Carousel controls -->

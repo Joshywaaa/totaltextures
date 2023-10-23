@@ -19,33 +19,7 @@
 </head>
 <body>
     <!-- Navigation bar with Bootstrap styling -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Brand/logo link -->
-            <a class="navbar-brand" href="index.html">Total Textures LTD</a>
-            <!-- Navbar toggle button for small screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Navigation links -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include "includes/nav.php"?>
     <main>
         <!-- First section about the business -->
         <div class="article-row">
@@ -61,21 +35,17 @@
                         <li data-bs-target="#businessCarousel" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#businessCarousel" data-bs-slide-to="1"></li>
                         <li data-bs-target="#businessCarousel" data-bs-slide-to="2"></li>
-                        <li data-bs-target="#businessCarousel" data-bs-slide-to="3"></li>
                     </ol>
                     <!-- Slides -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/manbelt.jpg" alt="Image 1">
+                            <img src="images/van.jpg" alt="van" style="width: 100%;">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/manbowl.jpg" alt="Image 2">
+                            <img src="images/shed.jpg" alt="shed" style="width: 100%;">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/manbrick.jpg" alt="Image 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/manpaint.jpg" alt="Image 4">
+                            <img src="images/house.jpg" alt="house" style="width: 100%;">
                         </div>
                     </div>
                     <!-- Controls -->
@@ -105,21 +75,17 @@
                         <li data-bs-target="#familyCarousel" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#familyCarousel" data-bs-slide-to="1"></li>
                         <li data-bs-target="#familyCarousel" data-bs-slide-to="2"></li>
-                        <li data-bs-target="#familyCarousel" data-bs-slide-to="3"></li>
                     </ol>
                     <!-- Slides -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/famBig.jpg" alt="famBig">
+                            <img src="images/family.jpg" alt="family" style=" width:100%;">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/blackFam.jpg" alt="blackFam">
+                            <img src="images/family old.jpg" alt="familyOld" style=" width:100%;">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/outsideFam.jpg" alt="outsideFam">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/beachfam.jpg" alt="beachFam">
+                            <img src="images/wife.jpg" alt="wife" style=" width:100%;">
                         </div>
                     </div>
                     <!-- Controls -->
